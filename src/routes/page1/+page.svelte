@@ -1,13 +1,10 @@
-<svelte:head>
-  <title>Page 1</title>
-</svelte:head>
-
-<h1 class="pagetitle">Page 1</h1>
-<p>This is the page 1</p>
-
-<div style="display: flex; justify-content: center;">
-  <a class="button" href="/">Home</a>
-  <a class="button" style="margin-left: 2px;" href="/page2">Page 2</a>
-  <a class="button" style="margin-left: 2px;" href="/page3">Page 3</a>
-</div>
-
+<!DOCTYPE>
+<html>
+  <head>
+      <title>My First Web Page</title>
+  </head>
+  <body>
+      <h1>My First Web Page</h1>
+      <p>Welcome to my first web page. I hope you enjoy it.</p>
+  </body>
+</html>
