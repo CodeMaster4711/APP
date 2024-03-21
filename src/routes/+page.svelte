@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-        const ipc = require("electron").ipcRenderer;
-        export async function load({ page, fetch, session }) {
-            return {
-                props: {
-                    // Ihre Daten hier
-                },
-                prerender: false, // Diese Seite wird nicht statisch generiert
-            };
-        }
 
-    </script>
-
-</head>
 <style>
     .loader {
         position: fixed;
@@ -27,7 +8,7 @@
         height: 100%;
         background-color: #1d1c1c;
         display: flex;
-        flex-direction: column; /* Hinzugefügt */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         z-index: 1000;
@@ -322,14 +303,13 @@
     }
 
     button {
-        background-color: none;
         text-decoration: none;
         background-color: #1d1c1c;
         border: none;
     }
 
 </style>
-<body class="loader">
+<div class="loader">
 <div class="ani">
     <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
         <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
@@ -343,5 +323,4 @@
         <a href="/page1"><span>Let´s Start</span></a>
     </button>
 </div>
-</body>
-</html>
+</div>
